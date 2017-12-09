@@ -4,6 +4,12 @@ def hours2days(sequence):
 
     return int(sequence/24), modulo
 
+
+def hours2days1(input_hours): 
+    days = input_hours // 24
+    hours = input_hours % 24 
+    return days, hours
+
 #>>> hours2days(24) # 24 hours is one day and zero hours
 print(hours2days(24))
 #(1, 0)
